@@ -2,14 +2,6 @@
 
 A Claude Code skill that autonomously explores any OrangeHRM module via Playwright and produces business-level documentation saved to `docs/{module}.md`.
 
-**Type:** Skill (user-triggered)
-
-**Model:** Claude Sonnet 5
-
-**Position in pipeline:** Step 1 — Explore
-
----
-
 ## What it does
 
 Given a prompt like "onboard me on the Admin module", the skill:
@@ -21,8 +13,6 @@ Given a prompt like "onboard me on the Admin module", the skill:
 5. Runs a self-reflection checkpoint by re-opening the module navigation and comparing it live against the menu tree recorded — catching any missed pages or mid-session UI changes
 6. Writes structured documentation following the template — with `(i)` markers on interpretive sections and "(assumed, not verified)" on unverified behavioral claims
 7. Outputs a chat confirmation that the rules file was read and applied — making rule adherence verifiable without opening the session log
-
----
 
 ## Validation — 3 runs, same answer key
 
@@ -56,8 +46,6 @@ The skill's own stated guarantees (Step 5 self-reflection):
 ### One surviving inference
 "Selecting Sendmail reveals a 'Path to Sendmail' field" — present in v1, v2, and v3. No radio interaction in any transcript. Documented in the v3 report as a known limitation; a future rule could add a specific example to catch this phrasing.
 
----
-
 ## Files
 
 | File | Description |
@@ -68,8 +56,6 @@ The skill's own stated guarantees (Step 5 self-reflection):
 | `assets/explorer-rules.md` | Rules file read by the skill at runtime |
 
 Full validation artifacts are in [`/validation/hrm-module-explorer/`](../../validation/hrm-module-explorer/).
-
----
 
 ## Human review note
 
