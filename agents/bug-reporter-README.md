@@ -32,4 +32,4 @@ Reproduces a described OrangeHRM defect via Playwright MCP and files a Jira Bug 
 
 ## Validation
 
-Validated with 4 scenarios: a missing-detail case, a real firsthand-confirmed bug, a genuinely open-outcome case, and a deliberately false claim. Full results, two structural findings (orchestrator prompt injection, a background-task confirmation deadlock), and recommendations: **bug-reporter validation report** (`validation/bug-reporter/bug-reporter-validation-report.md`)
+Validated with 4 scenarios: a missing-detail case, a real firsthand-confirmed bug, a genuinely open-outcome case, and a deliberately false claim. Full results, two structural findings (orchestrator handoff drift, a background-task confirmation deadlock), and recommendations: **bug-reporter validation report** (`validation/bug-reporter/bug-reporter-validation-report.md`)
