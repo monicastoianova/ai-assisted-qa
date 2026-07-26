@@ -1,6 +1,6 @@
 # AI-Assisted QA Portfolio
 
-**Claude Code skills and agents covering application analysis, test planning, and defect reporting** — key stages of the Software Testing Life Cycle applied to OrangeHRM. Every component is validated the way you'd validate any piece of software: expected outcomes predicted first, results checked against ground truth I built or verified myself, and claims verified against raw session logs, not chat summaries.
+**Claude Code skills and agents covering application analysis, test planning, and defect reporting — key stages of the Software Testing Life Cycle applied to OrangeHRM. Each component is validated against a specification I wrote and an expected outcome defined before running it — a hand-built reference set for the exploration skill, seeded test cases with predefined expected decisions for the planning pipeline, and for the bug-reporter, one firsthand-confirmed real bug plus three deliberately constructed test scenarios, each with an expected outcome defined in advance — and every claim is checked against raw session logs, not the agent's own chat summary.
 
 **Run on:** Claude Code, Claude Sonnet 5
 
