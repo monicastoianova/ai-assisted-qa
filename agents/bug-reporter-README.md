@@ -14,7 +14,7 @@ Reproduces a described OrangeHRM defect via Playwright MCP and files a Jira Bug 
 ## Design principles
 
 - **Never guess a defect into existence.** Three separate stop conditions exist specifically to prevent filing a bug that isn't real: reproduction failure, low confidence, and Expected=Actual.
-- **Human confirms before any write.** Findings are always shown and approved before Jira is touched — see F3 in the validation report for a gap between the specified report format and what was actually printed.
+- **Human confirms before any write.** Findings are always shown and approved before Jira is touched.
 - **Destructive actions require explicit sign-off**, separate from the report-confirmation gate.
 - **Config lives in CLAUDE.md**, not hardcoded — Jira instance, project key, sprint field ID.
 
