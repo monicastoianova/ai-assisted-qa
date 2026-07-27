@@ -43,7 +43,7 @@
 - Added a reproduction-failure stop condition — previously the agent had no defined behavior when the described symptom didn't occur
 - Added an Expected-vs-Actual comparison gate (Step 3) — previously a confident Expected Result alone was enough to proceed, with no check against what was actually observed, which could have produced a bug report for correct, expected behavior
 - Fixed Step 6 to resolve the Jira instance, project key, and sprint-field ID from CLAUDE.md instead of hardcoding them
-- Added scripted, mandatory wording for every stop condition, closing a gap where Step 1's stop had no defined phrasing and could not be reliably distinguished from ordinary conversation
+- Added scripted, mandatory wording to the destructive-action, reproduction-failure, Expected=Actual, and low-confidence stops, so a refusal is distinguishable from ordinary conversation. Step 1's missing-detail stop still has no defined phrasing — open item.
 
 ## 5. Conclusion
 
